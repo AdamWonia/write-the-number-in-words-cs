@@ -10,11 +10,8 @@ namespace Project
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
-                int number = ReadNumber();
-                PrintNumberInWord(number);
-            }
+            int number = ReadNumber();
+            PrintNumberInWord(number);
             Console.ReadKey();
         }
         /// <summary>
@@ -26,14 +23,21 @@ namespace Project
             int inputNumber = 0;
             bool continueFlag = true;
 
-            Console.WriteLine("\nInsert an integer between -1000 and 1000:");
+            Console.WriteLine("\n\nInsert an integer between -1000 and 1000:");
             while (continueFlag)
             {
-                inputNumber = int.Parse(Console.ReadLine());
-                if (inputNumber > 1000 || inputNumber < -1000)
-                    Console.WriteLine("Wrong number! Try again :)");
-                else
-                    continueFlag = false;
+                try
+                {
+                    inputNumber = int.Parse(Console.ReadLine());
+                    if (inputNumber > 1000 || inputNumber < -1000)
+                        Console.WriteLine("Wrong number! Try again :)");
+                    else
+                        continueFlag = false;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Invalid input number! Try again");
+                }
             }
             return inputNumber;
         }
@@ -99,9 +103,9 @@ namespace Project
 
             // Chech given number sign:
             if (number >= 0)
-                Console.WriteLine("Given number is: ");
+                Console.Write("Given number is: ");
             else
-                Console.WriteLine("Given number is: minus ");
+                Console.Write("Given number is: minus ");
 
             // Get absolute value:
             number = Math.Abs(number);
