@@ -1,0 +1,7 @@
+C:\Users\ja\Desktop\Programowanie\C#\projekt 3 - number to word\Project\Project\bin\Debug\Project.exe.config
+C:\Users\ja\Desktop\Programowanie\C#\projekt 3 - number to word\Project\Project\bin\Debug\Project.exe
+C:\Users\ja\Desktop\Programowanie\C#\projekt 3 - number to word\Project\Project\bin\Debug\Project.pdb
+C:\Users\ja\Desktop\Programowanie\C#\projekt 3 - number to word\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\ja\Desktop\Programowanie\C#\projekt 3 - number to word\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\ja\Desktop\Programowanie\C#\projekt 3 - number to word\Project\Project\obj\Debug\Project.exe
+C:\Users\ja\Desktop\Programowanie\C#\projekt 3 - number to word\Project\Project\obj\Debug\Project.pdb
