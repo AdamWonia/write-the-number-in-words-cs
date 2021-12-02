@@ -23,7 +23,7 @@ namespace Project
             int inputNumber = 0;
             bool continueFlag = true;
 
-            Console.WriteLine("\n\nInsert an integer between -1000 and 1000:");
+            Console.WriteLine("Insert an integer between -1000 and 1000:");
             while (continueFlag)
             {
                 try
@@ -120,9 +120,9 @@ namespace Project
                 int t = (int)Math.Floor((decimal)number / 10);
                 int u = number - t * 10;
                 if (u == 0)
-                    Console.Write(tens[t - 2]);
+                    Console.WriteLine(tens[t - 2]);
                 else
-                    Console.Write(tens[t - 2] + " " + digits[u]);
+                    Console.WriteLine(tens[t - 2] + " " + digits[u]);
             }
             if (number >= 100 && number < 1000)
             {
@@ -130,23 +130,23 @@ namespace Project
                 int h = (int)Math.Floor((double)number / 100);
                 int t = number - h * 100;
                 if (t == 0)
-                    Console.Write(hundreds[h - 1]);
+                    Console.WriteLine(hundreds[h - 1]);
                 else if (t >= 0 && t < 10)
-                    Console.Write(hundreds[h - 1] + " " + digits[t]);
+                    Console.WriteLine(hundreds[h - 1] + " " + digits[t]);
                 else if (t >= 10 && t < 20)
-                    Console.Write(hundreds[h - 1] + " " + numbers10To20[t - 10]);
+                    Console.WriteLine(hundreds[h - 1] + " " + numbers10To20[t - 10]);
                 else if (t >= 20 && t < 100)
                 {
                     int tt = (int)Math.Floor((double)t / 10);
                     int u = t - tt * 10;
                     if (u == 0)
-                        Console.Write(hundreds[h - 1] + " " + tens[tt - 2]);
+                        Console.WriteLine(hundreds[h - 1] + " " + tens[tt - 2]);
                     else
-                        Console.Write(hundreds[h - 1] + " " + tens[tt - 2] + " " + digits[u]);
+                        Console.WriteLine(hundreds[h - 1] + " " + tens[tt - 2] + " " + digits[u]);
                 }
             }
             if (number == 1000)
-                Console.Write(thousands[0]);
+                Console.WriteLine(thousands[0]);
         }
     }
 }
