@@ -3,7 +3,7 @@
 The program takes an integer number from user between -1000 and 1000 and prints it out verbally in the console.
 
 Example of use:
-```cmd
+```terminal
 Insert an integer between -1000 and 1000:
 839
 Given number is: eight hundred and thirty nine
